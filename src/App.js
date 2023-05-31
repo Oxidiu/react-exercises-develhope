@@ -1,11 +1,11 @@
 import './App.css';
-import { ClickCounter } from './components/ClickerCounter';
+import { ClickTracker } from './components/ClickTracker';
 
 
 function App() {
   return (
     <div className="App">
-      <ClickCounter/>
+      <ClickTracker/>
     </div>
   );
 }
