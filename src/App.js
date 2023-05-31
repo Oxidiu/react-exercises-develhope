@@ -5,8 +5,8 @@ import { Welcome } from './components/Welcome';
 function App() {
   return (
     <div className="App">
-      <h2>4-props-second-prop</h2>
-      <Welcome name="Oxide" age={26}/>
+      <h2>5-props-JSX-expression</h2>
+      <Welcome name={<strong>Oxide</strong>}/>
     </div>
   );
 }
