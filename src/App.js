@@ -5,8 +5,8 @@ import { Welcome } from './components/Welcome';
 function App() {
   return (
     <div className="App">
-      <h2>2-props-passing-name-prop</h2>
-      <Welcome name="Oxide" />
+      <h2>3-props-default-value</h2>
+      <Welcome/>
     </div>
   );
 }
