@@ -1,11 +1,11 @@
 import './App.css';
-import { Counter } from './components/Counter';
+import { ClickCounter } from './components/ClickerCounter';
 
 
 function App() {
   return (
     <div className="App">
-      <Counter initialValue={0} pace={2} interval={2000} />
+      <ClickCounter/>
     </div>
   );
 }
