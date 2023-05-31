@@ -6,8 +6,8 @@ import { Welcome } from './components/Welcome';
 function App() {
   return (
     <div className="App">
-      <h2>9-conditional-rendering-if-less-than-65</h2>
-      <Welcome name="Mortimer" age={100}/>
+      <Welcome name="Ovi" age={30}/> {/* Age is not displayed */}
+      <Welcome name="John" age={20}/>
     </div>
   );
 }
