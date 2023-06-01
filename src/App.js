@@ -1,11 +1,11 @@
 import './App.css';
-import { ClickTracker } from './components/ClickTracker';
+import {InteractiveWelcome} from "./components/InteractiveWelcome"
 
 
 function App() {
   return (
     <div className="App">
-      <ClickTracker/>
+      <InteractiveWelcome/>
     </div>
   );
 }
