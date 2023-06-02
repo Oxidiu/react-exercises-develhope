@@ -2,12 +2,12 @@ import './App.css';
 import {Login} from "./components/Login"
 
 function App() {
-  const onLogin = () => {
-    
-  }
+  // const onLogin = () => {
+  //   console.log(this.state)
+  // }
   return (
     <div className="App">
-      <Login/>
+      <Login />
     </div>
   );
 }
