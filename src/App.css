@@ -1,7 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+  font-family: 'VT323', monospace;
+}
+
+body {
+  margin: 0;
+}
 .App {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 50px;
   text-align: center;
-  background-color: aqua;
+  color: aqua;
   padding: 20px;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  border-color: aqua;
+  font-size: 20px;
+
+}
+input {
+  border: cyan solid;
+  background: black;
+  color: rgb(0, 0, 255);
+  font-size: 20px;
+}
+button {
+  border: cyan solid;
+  background: black;
+  color: cyan;
+  cursor: pointer;
+  font-size: 20px;
+
+}
+button:hover {
+  border: #009090 solid;
+  background: black;
+  color: #009090;
+  cursor: pointer;
+}
+button:active {
+  border: rgb(0, 0, 255) solid;
+  background: black;
+  color: rgb(0, 0, 255);
+  cursor: pointer;
 }
 
 

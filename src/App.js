@@ -1,11 +1,13 @@
 import './App.css';
-import {InteractiveWelcome} from "./components/InteractiveWelcome"
-
+import {Login} from "./components/Login"
 
 function App() {
+  const onLogin = () => {
+    
+  }
   return (
     <div className="App">
-      <InteractiveWelcome/>
+      <Login/>
     </div>
   );
 }
