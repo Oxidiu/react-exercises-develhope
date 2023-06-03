@@ -1,5 +1,5 @@
 import './App.css';
-import {Login} from "./components/Login"
+import {UncontrolledLogin} from "./components/UncontrolledLogin"
 
 function App() {
   // const onLogin = () => {
@@ -7,7 +7,7 @@ function App() {
   // }
   return (
     <div className="App">
-      <Login />
+      <UncontrolledLogin />
     </div>
   );
 }
