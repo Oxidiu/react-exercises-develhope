@@ -1,5 +1,5 @@
 import './App.css';
-import {UncontrolledLogin} from "./components/UncontrolledLogin"
+import {TodoList} from "./components/TodoList"
 
 function App() {
   // const onLogin = () => {
@@ -7,7 +7,7 @@ function App() {
   // }
   return (
     <div className="App">
-      <UncontrolledLogin />
+      <TodoList/>
     </div>
   );
 }
