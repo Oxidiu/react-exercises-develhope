@@ -2,9 +2,9 @@ import './App.css';
 import {Login} from "./components/Login"
 
 function App() {
-  // const onLogin = () => {
-  //   console.log(this.state)
-  // }
+  const onLogin = (state) => {
+    console.log(state)
+  }
   return (
     <div className="App">
       <Login />
