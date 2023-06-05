@@ -1,6 +1,11 @@
 import React, {createRef} from "react"
 
 export class UncontrolledLogin extends React.Component {
+    state = {
+        username: "",
+        password: "",
+    }
+    
     _formRef = createRef()
     handleFormSubmit = (event) => {
         event.preventDefault()
@@ -13,13 +18,13 @@ export class UncontrolledLogin extends React.Component {
         })
     }
     
-    // handleDisabled = () => {
+    handleDisabled = () => {
         
-    //     return (
-    //       this._formRef.current.elements.username.value === "" ||
-    //       this._formRef.current.elements.password.value === ""
-    //     );
-    // };
+        return (
+          this.state.username === "" ||
+          this.state.password === ""
+        );
+    };
     
     render () {
         return (
@@ -27,13 +32,17 @@ export class UncontrolledLogin extends React.Component {
             <div>
                 <form ref={this._formRef} onSubmit={this.handleFormSubmit}>
                     <label>Username</label>
-                    <input type="text" name="username" />
+                    <input type="text" name="username" onChange={ (event) => this.setState({
+                        username: event.target.value
+                    })}  />
                     <br />
                     <label>Password</label>
-                    <input type="password" name="password"/>
+                    <input type="password" name="password" onChange={(event) => this.setState({
+                        password: event.target.value
+                    })}/>
                     <input type="checkbox" name="remember" />
                     <br />
-                    <button type="submit" >Login</button>
+                    <button type="submit" disabled={this.handleDisabled()}>Login</button>
                     <button type="reset" >Reset</button>
                 </form>
 
