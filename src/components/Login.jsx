@@ -12,9 +12,9 @@ export class Login extends React.Component {
         })
 
     }
-    handleLogin = (e) => {
-        console.log(this.state)
-    }
+    // handleLogin = (e) => {
+    //     console.log(this.state)
+    // }
     handleDisabled = () => {
         if(
             this.state.username === "" ||
@@ -31,7 +31,7 @@ export class Login extends React.Component {
                 <input type="password" name="password" value={this.state.password} onChange={this.handleInputChange}/>
                 <input type="checkbox" name="remember" checked={this.state.remember} onChange={this.handleInputChange}/>
                 <br />
-                <button type="button" onClick={this.handleLogin}disabled={this.handleDisabled()}>Login</button>
+                <button type="button" onClick={() => this.props.onLogin(this.state)} disabled={this.handleDisabled()}>Login</button>
             </div>
         )
     }
