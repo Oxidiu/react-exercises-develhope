@@ -12,6 +12,7 @@ export class TodoList extends React.Component {
         this.setState({
             newTodo: "",
         })
+        
     }
     reset = () => {
         this.setState({
@@ -34,7 +35,7 @@ export class TodoList extends React.Component {
             <button onClick={this.addItem}>Add</button>
             <button onClick={this.reset}>Reset</button>
             <ul>
-                {this.state.items.map((item, i) => <li key={i}>{item} <button key={`button ${i}`} onClick={() => this.removeItem(i)}>Remove</button></li> )}
+                {this.props.itemGenerator(this.state.items, this.removeItem)}
             </ul>
         </div>
     }
