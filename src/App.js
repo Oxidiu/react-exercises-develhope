@@ -1,5 +1,5 @@
 import './App.css';
-import {Login} from "./components/Login"
+import {FunctionalLogin} from "./components/FunctionalLogin"
 
 function App() {
   const onLogin = (state) => {
@@ -7,7 +7,7 @@ function App() {
   }
   return (
     <div className="App">
-      <Login onLogin={onLogin}/>
+      <FunctionalLogin onLogin={onLogin}/>
     </div>
   );
 }
