@@ -3,9 +3,12 @@ import { ClickCounter } from './components/ClickerCounter';
 
 
 function App() {
+  const onCounterChange = (value) => {
+    console.log(value);
+  } 
   return (
     <div className="App">
-      <ClickCounter/>
+      <ClickCounter onCounterChange={onCounterChange} />
     </div>
   );
 }
