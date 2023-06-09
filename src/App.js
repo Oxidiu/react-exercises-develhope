@@ -1,11 +1,10 @@
 import './App.css';
-import { Counter } from './components/Counter';
-
+import {GithubUser} from "./components/GithubUser"
 
 function App() {
   return (
     <div className="App">
-      <GithubUser username="Oxide"/>
+      <GithubUser username="Oxidiu"/>
     </div>
   );
 }
