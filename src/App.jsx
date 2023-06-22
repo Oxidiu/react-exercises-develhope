@@ -1,9 +1,9 @@
 import React from 'react';
-import Counter from "./Counter"
+import LoginForm from "./LoginForm"
 const App = () => {
   return (
     <div>
-      <Counter/>
+      <LoginForm/>
     </div>
   );
 };
