@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+<!-- Exercise: -->
+<!-- You are building a recipe app. Users should be able to add new recipes, view existing recipes, and delete recipes. Implement the necessary components and functionality to achieve this. -->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- Requirements: -->
 
-## Available Scripts
+<!-- Add a state variable called "recipes", which is an array. -->
 
-In the project directory, you can run:
+<!-- Add a state variable called "inputText", which is a string. -->
 
-### `npm start`
+<!-- Save the recipe name we input in the input tag in "inputText". -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- Add a button called "Add Recipe". When pressed, it should add the recipe name in "inputText" to the "recipes" array. -->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- Use recipes.map() in the App's render functionality to render a card component for each recipe in the recipes array. -->
 
-### `npm test`
+<!-- Give each card component a "key" property. -->
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- Render the recipe name inside an input tag in each card component. Whenever the recipe name is edited, it should also update the "recipes" array. -->
 
-### `npm run build`
+<!-- To achieve this, pass the index of the recipe in the card component and a callback function defined in the App component that will update the recipes array. -->
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- Use the "value" property in the input tag to set the value for the recipe name obtained from the content prop. -->
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- Add a "Delete Recipe" button in the Card Component that, when clicked, will delete that recipe from the list. -->
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- To accomplish this, pass the index to the Card Component and a deleteCallback function that will delete a recipe from the recipes array. -->
 
-### `npm run eject`
+<!-- Update the "recipes" state variable and re-render the list of cards whenever a recipe is deleted. -->
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<!-- Add a state variable called "loggedIn", which will be initially set to false. -->
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- Add a state variable called "username", which will be initially set to null. -->
+<!-- Initially, hide the recipe cards when the user opens the website. -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Add a login screen to the page. It should consist of a div with the following tags inside it:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<!-- A text input field for the username. -->
 
-## Learn More
+<!-- A button called "Log In". -->
+<!-- When the user types in a username and presses the login button, save that username from the input into the "username" state variable and set "loggedIn" to true. -->
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<!-- If "loggedIn" is true, hide the login screen and show the input and recipe cards from the previous step. You can use CSS classes to show or hide the components. -->
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- Modify the existing code to store the "recipes" array in the browser's localStorage. This way, even if the user refreshes the page, the list of recipes will persist. -->
 
-### Code Splitting
+<!-- In the App component, add a useEffect hook to save the "recipes" array to localStorage whenever it changes. Use the localStorage.setItem() method to store the array. The "recipes" array should be converted to a string using JSON.stringify() before storing it. -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<!-- In the App component, add code to retrieve the "recipes" array from localStorage when the component mounts. 
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Use the localStorage.getItem() method to retrieve the stored string and convert it back to an array using JSON.parse(). If there are no stored recipes, initialize the "recipes" state variable with an empty array. -->
