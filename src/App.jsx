@@ -1,9 +1,9 @@
 import React from 'react';
-import LoginForm from "./LoginForm"
+import GithubUser from "./GithubUser"
 const App = () => {
   return (
     <div>
-      <LoginForm/>
+      <GithubUser username="Oxidiu"/>
     </div>
   );
 };
