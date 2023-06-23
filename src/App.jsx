@@ -1,9 +1,9 @@
 import React from 'react';
-import GithubUser from "./GithubUser"
+import CarDetails from "./CarDetails"
 const App = () => {
   return (
     <div>
-      <GithubUser username="Oxidiu"/>
+      <CarDetails/>
     </div>
   );
 };
