@@ -1,10 +1,17 @@
 import React from 'react';
-import Counter from "./Counter"
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import FilteredList from './FilteredList';
+import Counter from './Counter';
+
 const App = () => {
   return (
-    <div>
-      <Counter/>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={FilteredList} />
+        <Route path="/counter" component={Counter} />
+      </Switch>
+    </Router>
   );
 };
 
