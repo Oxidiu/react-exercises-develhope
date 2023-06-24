@@ -1,10 +1,15 @@
 import React from 'react';
-import GithubUser from "./GithubUser"
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import ShowGithubUser from './ShowGithubUser';
+
 const App = () => {
   return (
-    <div>
-      <GithubUser username="Oxidiu"/>
-    </div>
+    <Router>
+      <div>
+        {/* Your other routes */}
+        <Route path="/users/:username" component={ShowGithubUser} />
+      </div>
+    </Router>
   );
 };
 
