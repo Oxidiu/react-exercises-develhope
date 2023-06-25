@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import { Outlet } from 'react-router';
-import ShowGithubUser from './ShowGithubUser';
 import { Link } from 'react-router-dom';
 
 export const GithubUserList = () => {
@@ -27,7 +26,14 @@ export const GithubUserList = () => {
             })}
         </ul>
         <Outlet/>
-        
+        <Link to="/">Home</Link>
+      <br />
+      <Link to="/counter">Counter</Link>
+      <br />
+      <Link to="/universalTruth">Universal Truth</Link>
+      <br />
+      <Link to="/users">Users</Link>
+      <br />
         
     </div>)
 }

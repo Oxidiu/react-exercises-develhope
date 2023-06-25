@@ -14,6 +14,7 @@ const App = () => {
         <Route path="/counter" element={<Counter/>}/>
         <Route path="*" element={<div>404 - Not Found</div>}/>
         <Route path="/users" element={<GithubUserList/>}>
+          <Route index element={<h2>Add a user and select it</h2>}/>
           <Route path="/users/:username" element={<ShowGithubUser/>}/>
         </Route>
         

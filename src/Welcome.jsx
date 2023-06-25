@@ -7,11 +7,12 @@ export const Welcome = () => {
             <div>Welcome</div>
             <Link to="/">Home</Link>
             <br />
-            <Link to="/users/oxidiu">User</Link>
-            <br />
             <Link to="/counter">Counter</Link>
             <br />
             <Link to="/universalTruth">Universal Truth</Link>
+            <br />
+            <Link to="/users">Users</Link>
+            <br />
         </div>
     )
         
