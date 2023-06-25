@@ -10,6 +10,8 @@ export const Welcome = () => {
             <Link to="/users/oxidiu">User</Link>
             <br />
             <Link to="/counter">Counter</Link>
+            <br />
+            <Link to="/universalTruth">Universal Truth</Link>
         </div>
     )
         
