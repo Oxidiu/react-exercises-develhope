@@ -1,17 +1,17 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import FilteredList from './FilteredList';
 import Counter from './Counter';
 
 const App = () => {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={FilteredList} />
-        <Route path="/counter" component={Counter} />
-      </Switch>
-    </Router>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<h1>Welcome</h1>} />
+        <Route path="/counter" element={<Counter/>} />
+      </Routes>
+    </BrowserRouter>
+    
   );
 };
 
