@@ -11,7 +11,11 @@ export function useGithubUser(username) {
     return response.json();
   };
 
-  const { data, error, mutate } = useSWR(url, fetcher);
+  const { data, error, mutate } = useSWR(url, fetcher, {
+    shouldRetryOnError: false,
+    revalidateOnFocus: false,
+    revalidateOnReconnect: false,
+  });
 
   function refetch() {
     mutate();
